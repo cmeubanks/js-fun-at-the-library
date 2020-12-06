@@ -38,8 +38,12 @@ function editBook(book) {
   return book.pageCount = book.pageCount * 0.75 //used dot notation to access writeBook function pageCount key value pair
 }                                               // parameter book can be any book
 module.exports = {
-  createTitle,
-  buildMainCharacter,
+  createTitle,function () {
+    var bookTitle = createTitle("Teenage Ghoul");
+    var bookPageCount = calculatePageCount(bookTitle);
+
+    assert.equal(bookPageCount, 340);
+  });
   saveReview,
   calculatePageCount,
   writeBook,
