@@ -161,7 +161,7 @@ describe("shelf.js", function() {
         pageCount: 324,
         genre: "sciFi"
       };
-      var fantasyShelf = [dune, hyperion, endersGame]; //variable fantasyShelf is assigned to the array of objects
+      var fantasyShelf = [hyperion, dune, endersGame]; //variable fantasyShelf is assigned to the array of objects
 
       var titles = listTitles(fantasyShelf); //variable titles is assigned to the function listTitles with the argument of
                                               //fantasyShelf variable
